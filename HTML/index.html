@@ -1,0 +1,123 @@
+<html lang="en"> 
+    <head>
+        <meta charset="UTF-8">
+        <title>Soporte de IT en Panama</title>
+    </head>
+    <body>
+        <header>
+            <h1>Bienvenido al Soporte de IT en Panama</h1>
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQJsbfJz78-9dexXRFyekhH_7vKp9IxyCvpPgWJAs5BSg&s" alt="Logo de Soporte de IT">
+            <p id="descripcion-navegacion">Aqui encontraras multiples servicios de los cuales podras conocer sobre IT cerca de tu area. Selecciona entre cualquiera de las categorias para navegar</p>
+            <nav aria-describedby="descripcion-navegacion">
+                <ul>
+                    <li><a href="#servicios">Servicios</a></li>
+                    <li><a href="#detalles-servicios">Detalles de Servicios</a></li>
+                    <li><a href="#formulario-clientes">Formulario de Clientes</a></li>
+                    <li><a href="#informacion-contacto">Información de Contacto</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <section id="servicios">
+                <h2>Servicios de IT que ofrecemos:</h2>
+                <ul aria-label="Lista de servicios de IT">
+                    <li>Microsoft 365</li>
+                    <li>Network Support</li>
+                    <li>VMware Horizon</li>
+                    <li>Browser Troubleshooting</li>
+                </ul>
+            </section>
+
+            <section id="detalles-servicios">
+                <h2>Detalles sobre los servicios</h2>
+                <table>
+                    <caption>Tabla de servicios de IT</caption>
+                    <thead>
+                        <tr>
+                            <th>Servicio</th>
+                            <th>Descripción</th>
+                            <th>Horario</th>
+                            <th>Prioridad</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Microsoft 365</td>
+                            <td>Soporte para la suite de Microsoft 365, incluyendo Outlook, Word, etc.</td>
+                            <td>9:00 AM - 5:00 PM</td>
+                            <td>Alta</td>
+                        </tr>
+                        <tr>
+                            <td>Network Support</td>
+                            <td>Soporte para problemas de red y conectividad.</td>
+                            <td>8:00 AM - 6:00 PM</td>
+                            <td>Alta</td>
+                        </tr>
+                        <tr>
+                            <td>VMware Horizon</td>
+                            <td>Soporte para la plataforma de virtualización VMware Horizon.</td>
+                            <td>10:00 AM - 4:00 PM</td>
+                            <td>Media</td>
+                        </tr>
+                        <tr>
+                            <td>Browser Troubleshooting</td>
+                            <td>Resolución de problemas con navegadores web.</td>
+                            <td>9:00 AM - 5:00 PM</td>
+                            <td>Baja</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+            <section id="formulario-clientes">
+                <h2>Formulario para nuevos clientes</h2>
+                <p>Aqui te puedes registrar para obtener nuestros servicios.</p>
+                
+                <form action="url.example.com" method="post" aria-label="Formulario de registro de clientes">
+                    <fieldset>
+                        <legend>Información del cliente</legend>
+                        <label for="name">Nombre Completo:</label>
+                        <input type="text" id="name" name="name" required placeholder="ej. Hector De Leon"/>
+
+                        <label for="email">Correo Electrónico:</label>
+                        <input type="email" id="email" name="email" required placeholder="ejemplo@dominio.com"/>
+
+                        <label for="phone">Número de Teléfono:</label>
+                        <input type="tel" id="phone" name="phone" required placeholder="ej. 1234-5678"/>
+
+                        <p>Servicio de Interés:</p>
+                        <input type="checkbox" id="service1" name="services" value="microsoft365"/>
+                        <label for="service1">Microsoft 365</label>
+                        <input type="checkbox" id="service2" name="services" value="network_support"/>
+                        <label for="service2">Network Support</label>
+                        <input type="checkbox" id="service3" name="services" value="vmware_horizon"/>
+                        <label for="service3">VMware Horizon</label>
+                        <input type="checkbox" id="service4" name="services" value="browser_troubleshooting"/>
+                        <label for="service4">Browser Troubleshooting</label>
+
+                        <p>¿Prioridad del servicio?</p>
+                        <select id="priority" name="priority" aria-label="Selecciona la prioridad del servicio" required>
+                            <option value="Seleccionar prioridad" disabled selected>Seleccionar prioridad</option>
+                            <option value="baja">Baja</option>
+                            <option value="media">Media</option>
+                            <option value="alta">Alta</option>
+                        </select>
+
+                        <p id="message-label">Algun otro servicio personalizado por el cual quiere consultar?</p>
+                        <textarea id="message" name="message" rows="4" cols="50" aria-labelledby="message-label"></textarea>
+                        <button type="submit" aria-label="Enviar formulario">Enviar</button>
+                    </fieldset>
+                </form>
+            </section>
+        </main>
+        <footer>
+            <section id="informacion-contacto">
+                <h2>Información de Contacto</h2>
+                <address>
+                    <p>Dirección: Calle 50, Ciudad de Panamá, Panamá</p>
+                    <p>Teléfono: +507 1234-5678</p>
+                    <p>Email: info@serviciosit.com.pa</p>
+                </address>
+            </section>
+        </footer>
+    </body>
+</html>
